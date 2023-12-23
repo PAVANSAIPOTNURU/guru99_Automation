@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="4" name="Test">
+	  <parameter name="browser" value="chrome" />
+		<parameter name="url" value="https://www.demo.guru99.com/V4/" />
+		<parameter name="userid" value="mngr543288" />
+		<parameter name="password" value="ququdUv" />
+		<classes>
+			<class name="com.guru99.demo.testcases.LoginSection" />
+			
+			
+			
+		</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

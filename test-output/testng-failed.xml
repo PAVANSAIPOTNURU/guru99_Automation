@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="password" value="ququdUv"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="userid" value="mngr543288"/>
+    <parameter name="url" value="https://www.demo.guru99.com/V4/"/>
+    <classes>
+      <class name="com.guru99.demo.testcases.LoginSection">
+        <methods>
+          <include name="Setup"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- com.guru99.demo.testcases.LoginSection -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

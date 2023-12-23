@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-23T19:56:42 IST" name="Suite" finished-at="2023-12-23T19:57:25 IST" duration-ms="43132">
+    <groups>
+    </groups>
+    <test started-at="2023-12-23T19:56:42 IST" name="Test" finished-at="2023-12-23T19:57:25 IST" duration-ms="43132">
+      <class name="com.guru99.demo.testcases.LoginSection">
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:com.guru99.demo.testcases.LoginSection@2e8c1c9b]" started-at="2023-12-23T19:56:44 IST" name="Setup" finished-at="2023-12-23T19:56:53 IST" duration-ms="9320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.demo.guru99.com/V4/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.guru99.demo.testcases.LoginSection@2e8c1c9b]" started-at="2023-12-23T19:56:53 IST" name="login" data-provider="credentials" finished-at="2023-12-23T19:56:55 IST" duration-ms="1826" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr543288]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ququdUv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.guru99.demo.testcases.LoginSection@2e8c1c9b]" started-at="2023-12-23T19:56:55 IST" name="TearDown" finished-at="2023-12-23T19:56:55 IST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:com.guru99.demo.testcases.LoginSection@2e8c1c9b]" started-at="2023-12-23T19:56:55 IST" name="Setup" finished-at="2023-12-23T19:57:05 IST" duration-ms="9672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.demo.guru99.com/V4/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.guru99.demo.testcases.LoginSection@2e8c1c9b]" started-at="2023-12-23T19:57:05 IST" name="login" data-provider="credentials" finished-at="2023-12-23T19:57:05 IST" duration-ms="808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pavan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ququdUv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.guru99.demo.testcases.LoginSection@2e8c1c9b]" started-at="2023-12-23T19:57:05 IST" name="TearDown" finished-at="2023-12-23T19:57:06 IST" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:com.guru99.demo.testcases.LoginSection@2e8c1c9b]" started-at="2023-12-23T19:57:06 IST" name="Setup" finished-at="2023-12-23T19:57:14 IST" duration-ms="8734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.demo.guru99.com/V4/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.guru99.demo.testcases.LoginSection@2e8c1c9b]" started-at="2023-12-23T19:57:14 IST" name="login" data-provider="credentials" finished-at="2023-12-23T19:57:15 IST" duration-ms="816" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pavanpotnuru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pavanpotnuru]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.guru99.demo.testcases.LoginSection@2e8c1c9b]" started-at="2023-12-23T19:57:15 IST" name="TearDown" finished-at="2023-12-23T19:57:15 IST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:com.guru99.demo.testcases.LoginSection@2e8c1c9b]" started-at="2023-12-23T19:57:15 IST" name="Setup" finished-at="2023-12-23T19:57:24 IST" duration-ms="8872" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.demo.guru99.com/V4/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:com.guru99.demo.testcases.LoginSection@2e8c1c9b]" started-at="2023-12-23T19:57:24 IST" name="login" data-provider="credentials" finished-at="2023-12-23T19:57:25 IST" duration-ms="920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr543288]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pavanpotnuru]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.guru99.demo.testcases.LoginSection@2e8c1c9b]" started-at="2023-12-23T19:57:25 IST" name="TearDown" finished-at="2023-12-23T19:57:25 IST" duration-ms="152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.guru99.demo.testcases.LoginSection -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
