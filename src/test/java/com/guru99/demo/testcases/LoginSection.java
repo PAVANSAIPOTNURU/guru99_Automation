@@ -1,12 +1,17 @@
 package com.guru99.demo.testcases;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -14,7 +19,7 @@ import org.testng.annotations.Test;
 public class LoginSection extends Base{
 	
 	@Test(dataProvider = "credentials")
-	public void login(String userid, String pswd) 
+	public void login(String userid, String pswd) throws IOException 
 	{
 		driver.findElement(By.name("uid")).sendKeys(userid);
 		driver.findElement(By.name("password")).sendKeys(pswd);
@@ -35,6 +40,7 @@ public class LoginSection extends Base{
 			List<String> manager_id = new ArrayList<>(Arrays.asList(manager_element.split(" ")));
 			Assert.assertEquals(driver.getTitle(),"Guru99 Bank Manager HomePage");
 			Assert.assertEquals(manager_id.get(3), userid);
+			screenshot();
 			
 		}	
 	
