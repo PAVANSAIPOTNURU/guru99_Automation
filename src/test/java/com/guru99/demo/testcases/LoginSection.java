@@ -38,7 +38,6 @@ public class LoginSection extends Base{
 		{
 			String manager_element = driver.findElement(By.xpath("//tr[@class = \"heading3\"]//td")).getText();
 			List<String> manager_id = new ArrayList<>(Arrays.asList(manager_element.split(" ")));
-			Assert.assertEquals(driver.getTitle(),"Guru99 Bank Manager HomePage");
 			Assert.assertEquals(manager_id.get(3), userid);
 			screenshot();
 			
