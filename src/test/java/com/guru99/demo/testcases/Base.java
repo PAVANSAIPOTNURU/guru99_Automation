@@ -16,6 +16,7 @@ import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -84,17 +85,28 @@ public class Base {
 
 		return credentialsArray;
 	}
-
-	public void screenshot() throws IOException {
-		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-		File src = takesScreenshot.getScreenshotAs(OutputType.FILE);
+	public String currentdatetime()
+	{
 		LocalDateTime currentDateTime = LocalDateTime.now();
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 		String formattedDateTime = currentDateTime.format(formatter);
 		formattedDateTime = formattedDateTime.replace(":","_");
-		File trg = new File("C:\\Users\\potnu\\eclipse-workspace\\com.guru99.demo\\target\\ScreenShots\\screenshot_"+formattedDateTime+".png");
-		FileUtils.copyFile(src, trg);
+		return formattedDateTime;
+	}
 
+	public void screenshot() throws IOException {
+		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+		File src = takesScreenshot.getScreenshotAs(OutputType.FILE);
+		File trg = new File(".\\target\\ScreenShots\\screenshot_"+currentdatetime()+".png");
+		FileUtils.copyFile(src, trg);
+	}
+	
+	
+	public void screenshot(WebElement element) throws IOException
+	{
+		File src2 = element.getScreenshotAs(OutputType.FILE);
+		File des2 = new File(".\\target\\ScreenShots\\screenshot_"+currentdatetime()+".png");
+		FileUtils.copyFile(src2, des2);
 	}
 
 }
